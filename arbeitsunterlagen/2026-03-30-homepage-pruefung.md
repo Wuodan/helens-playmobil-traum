@@ -6,7 +6,7 @@ Datum: 2026-03-30
 
 1. Hoch: Die Seite ist noch nicht veroeffentlichungsreif, weil Kontakt und Social-Media-Aktionen Platzhalter sind. Der CTA fuehrt zum Kontaktbereich, aber dort steht nur `deine-email@beispiel.de`, und beide Social-Links zeigen auf `#`. Nutzer landen also bei Sackgassen statt bei echten Kontaktmoeglichkeiten. Siehe `index.html:106`, `index.html:147`, `index.html:148`, `index.html:158`.
 
-2. Hoch: Fuer eine Vereinswebseite muessen die rechtlichen Pflichtangaben vor einer Veroeffentlichung fuer die Schweiz geprueft werden. Das ist kein Rechtsrat, aber vor einem Livegang sollte das verbindlich nach Schweizer Vorgaben geklaert sein.
+2. ~~Hoch: Fuer eine Vereinswebseite muessen die rechtlichen Pflichtangaben vor einer Veroeffentlichung fuer die Schweiz geprueft werden. Das ist kein Rechtsrat, aber vor einem Livegang sollte das verbindlich nach Schweizer Vorgaben geklaert sein.~~
 
 3. ~~Mittel: Die Galerie hat zuvor Bilder ueber GitHub-Raw-URLs geladen statt ueber lokale relative Pfade. Das erzeugt eine unnoetige externe Abhaengigkeit fuer eigene Dateien, macht lokale und Offline-Vorschauen unzuverlaessiger und ist fehleranfaellig, wenn sich Branch oder Repo-Pfad aendern. Diese Dateien sollten lokal eingebunden sein. Siehe `index.html:138`, `index.html:139`, `index.html:140`.~~
 
