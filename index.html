@@ -221,6 +221,42 @@ h2 {
     border-radius: 10px;
 }
 
+.teaser-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.gallery-actions {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.category-list {
+    display: grid;
+    gap: 24px;
+}
+
+.category-entry {
+    display: grid;
+    grid-template-columns: minmax(220px, 320px) 1fr;
+    gap: 24px;
+    align-items: start;
+    padding: 24px 0;
+    border-top: 1px solid #ececec;
+}
+
+.category-entry:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.category-entry img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
 .social {
     text-align: center;
 }
@@ -374,12 +410,20 @@ footer {
 </section>
 
 <section>
-    <h2>Galerie</h2>
-    <div class="gallery">
-        <img src="bilder/galerie/vereinsfoto.jpg" alt="Helen und Jens mit grosser Playmobilfigur">
-        <img src="bilder/galerie/marktszene.jpg" alt="Playmobil Szene">
-        <img src="bilder/galerie/gartenszene.jpg" alt="Playmobil Szene">
-    </div>
+    <a href="#" class="teaser-link" data-subpage="bilder-uebersicht">
+        <h2>Einblicke</h2>
+        <p style="text-align:center;">
+            Einige Eindrücke aus unserem Verein. Weitere Bilder findest du bei den einzelnen Ausstellungen und Bauprojekten.
+        </p>
+        <div class="gallery">
+            <img src="bilder/galerie/vereinsfoto.jpg" alt="Helen und Jens mit grosser Playmobilfigur">
+            <img src="bilder/galerie/marktszene.jpg" alt="Playmobil Szene">
+            <img src="bilder/galerie/gartenszene.jpg" alt="Playmobil Szene">
+        </div>
+        <div class="gallery-actions">
+            <span class="entry-link">Alle Bilder ansehen</span>
+        </div>
+    </a>
 </section>
 
 <section class="social">
@@ -444,6 +488,94 @@ footer {
             <div class="subpage-gallery">
                 <img src="https://www.picclickimg.com/eV8AAOSwUFxeLfI0/Schuco-Studio-Mercedes-Rennwagen-Diorama-Werkstatt-Figuren.webp" alt="Beispielbild einer Werkstatt-Szene mit Figuren">
                 <img src="https://www.picclickimg.com/15oAAOSwqKllLQT3/PLAYMOBIL%C2%AE-Sammelfiguren-Serie-13-Girls-Schaukasten-Diorama.webp" alt="Beispielbild eines kreativen Playmobil-Projekts">
+            </div>
+        </div>
+    </section>
+</main>
+
+<main class="subpage" id="subpage-bilder-uebersicht">
+    <section>
+        <a href="#" class="subpage-back" data-back>← Zurück zur Übersicht</a>
+        <div class="subpage-content">
+            <h2>Bilder</h2>
+            <p>Hier findest du die Bilder nach Bereichen geordnet. So lassen sich Ausstellungen, Bauprojekte und Eindrücke aus dem Vereinsleben getrennt anschauen.</p>
+            <div class="category-list">
+                <article class="category-entry">
+                    <img src="https://playmorama.de/wp-content/uploads/2019/01/gestaltung-playmobil-baustellen-diorama.jpg" alt="Beispielbild aus einer Ausstellung">
+                    <div>
+                        <h3>Ausstellungen</h3>
+                        <p class="event-meta">Sammlung aus öffentlichen Präsentationen</p>
+                        <p>Bilder von aufgebauten Themenwelten, einzelnen Szenen und besonderen Details aus unseren Ausstellungen.</p>
+                        <a href="#" class="entry-link" data-subpage="bilder-ausstellungen">Zur Kategorie</a>
+                    </div>
+                </article>
+
+                <article class="category-entry">
+                    <img src="https://www.picclickimg.com/eV8AAOSwUFxeLfI0/Schuco-Studio-Mercedes-Rennwagen-Diorama-Werkstatt-Figuren.webp" alt="Beispielbild aus einem Bauprojekt">
+                    <div>
+                        <h3>Bauprojekte</h3>
+                        <p class="event-meta">Modelle, Dioramen und Themenwelten</p>
+                        <p>Bilder aus gemeinschaftlichen Projekten und einzelnen Themenwelten mit Figuren, Fahrzeugen und vielen kleinen Details.</p>
+                        <a href="#" class="entry-link" data-subpage="bilder-bauprojekte">Zur Kategorie</a>
+                    </div>
+                </article>
+
+                <article class="category-entry">
+                    <img src="bilder/galerie/vereinsfoto.jpg" alt="Vereinsbild mit grosser Playmobilfigur">
+                    <div>
+                        <h3>Vereinsleben</h3>
+                        <p class="event-meta">Menschen, Begegnungen und Eindrücke</p>
+                        <p>Einblicke in den Verein, gemeinsame Momente und Bilder rund um Begegnungen, Präsentationen und das Miteinander.</p>
+                        <a href="#" class="entry-link" data-subpage="bilder-vereinsleben">Zur Kategorie</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<main class="subpage" id="subpage-bilder-ausstellungen">
+    <section>
+        <a href="#" class="subpage-back" data-back="bilder-uebersicht">← Zurück zu Bilder</a>
+        <div class="subpage-content">
+            <h2>Bilder zu Ausstellungen</h2>
+            <p class="event-meta">Ausgewählte Eindrücke aus öffentlichen Präsentationen</p>
+            <div class="subpage-gallery">
+                <img src="https://playmorama.de/wp-content/uploads/2019/01/gestaltung-playmobil-baustellen-diorama.jpg" alt="Beispielbild einer Ausstellung">
+                <img src="https://www.picclickimg.com/YJ8AAOSwgOJj6T~W/PLAYMOBIL%C2%AE-Special-Plus-Figuren-Schaukasten-Diorama.webp" alt="Beispielbild einer Ausstellungs-Szene">
+                <img src="https://www.picclickimg.com/15oAAOSwqKllLQT3/PLAYMOBIL%C2%AE-Sammelfiguren-Serie-13-Girls-Schaukasten-Diorama.webp" alt="Beispielbild weiterer Figurenwelten">
+                <img src="https://www.picclickimg.com/eV8AAOSwUFxeLfI0/Schuco-Studio-Mercedes-Rennwagen-Diorama-Werkstatt-Figuren.webp" alt="Beispielbild einer Ausstellungs-Werkstatt">
+            </div>
+        </div>
+    </section>
+</main>
+
+<main class="subpage" id="subpage-bilder-bauprojekte">
+    <section>
+        <a href="#" class="subpage-back" data-back="bilder-uebersicht">← Zurück zu Bilder</a>
+        <div class="subpage-content">
+            <h2>Bilder zu Bauprojekten</h2>
+            <p class="event-meta">Ausgewählte Beispiele aus Dioramen und Themenwelten</p>
+            <div class="subpage-gallery">
+                <img src="https://www.picclickimg.com/eV8AAOSwUFxeLfI0/Schuco-Studio-Mercedes-Rennwagen-Diorama-Werkstatt-Figuren.webp" alt="Beispielbild eines Bauprojekts">
+                <img src="https://playmorama.de/wp-content/uploads/2019/01/gestaltung-playmobil-baustellen-diorama.jpg" alt="Beispielbild einer Baustellen-Szene">
+                <img src="https://www.picclickimg.com/15oAAOSwqKllLQT3/PLAYMOBIL%C2%AE-Sammelfiguren-Serie-13-Girls-Schaukasten-Diorama.webp" alt="Beispielbild einer Themenwelt">
+                <img src="https://www.picclickimg.com/YJ8AAOSwgOJj6T~W/PLAYMOBIL%C2%AE-Special-Plus-Figuren-Schaukasten-Diorama.webp" alt="Beispielbild einer Figuren-Szene">
+            </div>
+        </div>
+    </section>
+</main>
+
+<main class="subpage" id="subpage-bilder-vereinsleben">
+    <section>
+        <a href="#" class="subpage-back" data-back="bilder-uebersicht">← Zurück zu Bilder</a>
+        <div class="subpage-content">
+            <h2>Bilder aus dem Vereinsleben</h2>
+            <p class="event-meta">Menschen, Begegnungen und gemeinsame Momente</p>
+            <div class="subpage-gallery">
+                <img src="bilder/galerie/vereinsfoto.jpg" alt="Helen und Jens mit grosser Playmobilfigur">
+                <img src="bilder/galerie/marktszene.jpg" alt="Playmobil Szene">
+                <img src="bilder/galerie/gartenszene.jpg" alt="Playmobil Szene">
             </div>
         </div>
     </section>
@@ -517,6 +649,13 @@ backLinks.forEach((link) => {
         event.preventDefault();
         closeAllSubpages();
         mainContent.style.display = "";
+        const target = link.dataset.back ? document.getElementById("subpage-" + link.dataset.back) : null;
+
+        if (target) {
+            target.classList.add("is-open");
+            mainContent.style.display = "none";
+        }
+
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
